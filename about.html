@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<title>Clan Inks iGod - Acerca de</title>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        .center {
+            margin: auto;
+            width: 100%;
+            padding: auto;
+            background-color: #000000;
+            min-height: 2.5cm;
+            text-align: center 
+        }
+
+        .rectangle {
+            height: 5px;
+            width: 100%;
+            background: #000000;
+        }
+
+        .rectangle-footer {
+            min-height: 115px;
+            width: 100%;
+            background-color: #000000;
+        }
+        @font-face {
+            font-family: "Console";
+            src: url("custom-fonts/Inconsolata-VariableFont_wdth\,wght.ttf");
+        }
+        @font-face {
+            font-family: "Mojangles";
+            src: url('custom-fonts/minecraft.ttf');
+        }
+    </style>
+    <style type="text/css">
+        * {
+            margin: auto;
+            padding: 0px;
+        }
+
+        #header {
+            margin: 0px;
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+            align-content: center
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        .nav>li {
+            float: left;
+        }
+
+        .nav li a {
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 12px;
+            display: block;
+            transition: linear 0.25s;
+        }
+
+        .nav li a:hover {
+            background-color: #434343a2;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+        }
+
+        .nav li:hover>ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+    </style>
+    <style>
+        .elemento-scroll {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            word-wrap: break-word;
+        }
+    </style>
+    <style>
+        .button-invite {
+            margin: auto;
+            border: 5px solid #000000;
+            padding: 10px;
+            background-color: #00000000;
+        }
+        .panel-about {
+            font-size: 1.25cm;
+            color: #000000a9;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
+    </style>
+    
+    <div class="center" style="font-family: Console; font-size: 1.75cm; text-align: center;">
+        <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">Acerca de este Clan</p>
+    </div>
+</head>
+<body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div id="header" style="min-height: 1.5cm; background-color: black; width: 100%; align-content: center;">
+        <ul class="nav">
+            <li><a draggable="true">Funciones</a>
+                <ul>
+                    <li><a href="">Recargar página</a>
+                    <li><a draggable="true" onclick="openWindowText('Esto no sé para que está la verdad')">Abrir ventana</a>
+                </ul>
+            <li><a href="index.html">Inicio</a>
+            <li><a href="server-mc.html">Servidor de Minecraft</a>
+            <li><a href="id-info.html">IDs de juegos</a>
+            <li><a href="discord.html">Discord</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="panel-about" style="font-family: Impact;">
+            En este clan puedes tener amigos con los que jugar una gran variedad de juegos con los integrantes del mismo sin ningún
+            problema. Aquí tienes una lista de todos los juegos que jugamos:
+        </p>
+        <p class="panel-about" style="font-family: Impact;">- Fortnite</p>
+        <p class="panel-about" style="font-family: Impact;">- Minecraft (ambos Java y Bedrock)</p>
+        <p class="panel-about" style="font-family: Impact;">- Rocket League</p>
+        <p class="panel-about" style="font-family: Impact;">- Gran Turismo</p>
+        <p class="panel-about" style="font-family: Impact;">- Call of Duty</p>
+        <p class="panel-about" style="font-family: Impact;">- Splatoon 2</p>
+        <p class="panel-about" style="font-family: Impact;">- Mario Kart</p>
+        <p class="panel-about" style="font-family: Impact;">- Arms</p>
+        <p class="panel-about" style="font-family: Impact;">
+            Si quieres entrar abajo del todo tienes métodos de contactar con el Co-Líder del Clan si te interesa entrar
+        </p>
+    </div>
+    <script>
+        function openWindowText(text) {
+                var windoww = window.open(``, `Ventana`, `height=50px, width=40px`)
+                windoww.document.write(`<html><body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+            }
+
+            function openWindowCustom(url, name, config) {
+                var windoww = window.open(`${url}`, `${name}`, `${config}`)
+            }
+    </script>
+    <br>
+</body>
+
+<footer>
+    <div class="rectangle-footer">
+        <p style="font-size: 1.25cm; font-family: Console; text-align: center; color: rgb(255, 255, 255);" draggable="true">Contacto</p>
+        <p style="font-size: 1cm; font-family: Console; color: #ffffff; text-align: center;"><b draggable="true">Discord:</b> Mr. Mario#8498 <img src="imgs/Discord pfp xmas.png" style="height: 48px; border-radius: 32px;" draggable="false"></p>
+        <br>
+    </div>
+</footer>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset:utf-8" />
+
+<html style="background-image: url('imgs/mc\ background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+<title>Clan Inks iGod - Servidor de Minecraft</title>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        .center {
+            margin: auto;
+            width: 100%;
+            padding: auto;
+            background-color: #000000;
+            min-height: 2.5cm;
+            text-align: center 
+        }
+
+        .rectangle {
+            height: 5px;
+            width: 100%;
+            background: #000000;
+        }
+
+        .rectangle-footer {
+            min-height: 115px;
+            width: 100%;
+            background-color: #000000;
+        }
+        @font-face {
+            font-family: "Console";
+            src: url("custom-fonts/Inconsolata-VariableFont_wdth\,wght.ttf");
+        }
+        @font-face {
+            font-family: "Mojangles";
+            src: url('custom-fonts/minecraft.ttf');
+        }
+    </style>
+    <style type="text/css">
+        * {
+            margin: auto;
+            padding: 0px;
+        }
+
+        #header {
+            margin: 0px;
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+            align-content: center
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        .nav>li {
+            float: left;
+        }
+
+        .nav li a {
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 12px;
+            display: block;
+            transition: linear 0.25s;
+        }
+
+        .nav li a:hover {
+            background-color: #434343a2;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+        }
+
+        .nav li:hover>ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+    </style>
+    <style>
+        .elemento-scroll {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            word-wrap: break-word;
+        }
+    </style>
+    <style>
+        .button-invite {
+            margin: auto;
+            border: 5px solid #000000;
+            padding: 10px;
+            background-color: #00000000;
+        }
+        .panel-about {
+            font-size: 1.25cm;
+            color: #00000099;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
+    
+    <div class="center" style="font-family: Mojangles; font-size: 1.75cm; text-align: center;">
+        <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">Servidor de Minecraft</p>
+    </div>
+</head>
+<body style="background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div id="header" style="min-height: 1.5cm; background-color: black; width: 100%;font-family: Mojangles;">
+        <ul class="nav">
+            <li><a draggable="true">Funciones</a>
+                <ul>
+                    <li><a href="">Recargar página</a>
+                    <li><a draggable="true" onclick="openWindowText('Esto no sé para que está la verdad')">Abrir ventana</a>
+                </ul>
+            <li><a href="about.html">Acerca de</a>
+            <li><a href="server-mc.html">Servidor de Minecraft</a>
+            <li><a href="id-info.html">IDs de juegos</a>
+            <li><a href="discord.html">Discord</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="width: 60%; height: 666px; background-color: rgb(49, 49, 49); color: white; font-family: Arial; border-radius: 10px;">
+        <style>
+            .server-info {
+                text-align: center;
+                font-size: 1cm;
+            }
+            .bold-info {
+                text-align: center;
+                font-size: 1cm;
+                font-family: Impact;
+            }
+        </style>
+        <br>
+        <p class="server-info" style="font-family: Mojangles;"><b class="bold-info" draggable="true" style="font-family: Mojangles;">Ip:</b> notmrmario.aternos.me</p>
+        <br>
+        <p class="server-info" style="font-family: Mojangles;"><b class="bold-info" draggable="true" style="font-family: Mojangles;">Versión:</b> 1.16.4 Vanilla</p>
+        <br>
+        <p class="server-info" style="font-family: Mojangles;"><b class="bold-info" draggable="true" style="font-family: Mojangles;">Tipo:</b> Java</p>
+        <br>
+        <p class="bold-info" style="font-family: Mojangles;"><b style="font-family: Mojangles;">Estado:</b></p><p class="server-info" id=stus style="font-family: Mojangles;"></p>
+        <br>
+        <p class="bold-info" style="font-family: Mojangles;"><b style="font-family: Mojangles;">Número de jugadores:</b></p><p class="server-info" id=nply style="font-family: Mojangles;"></p>
+        <br>
+        <br>
+        <br>
+        <div style="text-align: center; min-height: 210px; width: 790px; background-color: black; border-radius: 5px; border-color: white; border-width: 5px; border-style: solid; border-collapse: collapse; min-width: 2cm; position: absolute">
+            <br>
+            <img src="imgs/Nueva imagen de Discord.png" style="height: 96px; width: 96px; border-radius: 64px;" draggable="true">
+            <br>
+            <br>
+            <p id=motd style="font-family: Mojangles; font-size: 0.75cm; min-width: 300px" draggable="true"></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <script src="js/mc-api.js"></script>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        function openWindowText(text) {
+            var windoww = window.open(``, `Ventana`, `height=100px,width=100px`)
+            windoww.document.write(`<html><body style="background-image: url('bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+        }
+        
+        function openWindowCustom(url, name, config) {
+            var windoww = window.open(`${url}`, `${name}`, `${config}`)
+        }
+    </script>
+</body>
+
+<footer>
+    <div class="rectangle-footer">
+        <p style="font-size: 1cm; font-family: Mojangles; text-align: center; color: rgb(255, 255, 255);" draggable="true"><b>Contacto</b></p>
+        <p style="font-size: 1cm; font-family: Mojangles; color: #ffffff; text-align: center;"><b draggable="true">Discord:</b> Mr. Mario#8498 <img src="imgs/Discord pfp xmas.png" style="height: 48px; border-radius: 32px;" draggable="false"></p>
+        <br>
+    </div>
+</footer>

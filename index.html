@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Clan Inks iGod - Inicio</title>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        .center {
+            margin: auto;
+            width: 100%;
+            padding: auto;
+            background-color: #000000;
+            min-height: 2.5cm;
+            text-align: center
+        }
+
+        .rectangle {
+            height: 5px;
+            width: 100%;
+            background: #000000;
+        }
+
+        .rectangle-footer {
+            min-height: 115px;
+            width: 100%;
+            background-color: #000000;
+        }
+
+        @font-face {
+            font-family: "Console";
+            src: url("custom-fonts/Inconsolata-VariableFont_wdth\,wght.ttf");
+        }
+
+        @font-face {
+            font-family: "Mojangles";
+            src: url('custom-fonts/minecraft.ttf');
+        }
+    </style>
+    <style type="text/css">
+        * {
+            margin: auto;
+            padding: 0px;
+        }
+
+        #header {
+            margin: 0px;
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+            align-content: center
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        .nav>li {
+            float: left;
+        }
+
+        .nav li a {
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 12px;
+            display: block;
+            transition: linear 0.25s;
+        }
+
+        .nav li a:hover {
+            background-color: #434343a2;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+        }
+
+        .nav li:hover>ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+    </style>
+    <style>
+        .elemento-scroll {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            word-wrap: break-word;
+        }
+    </style>
+    <style>
+        .button-invite {
+            margin: auto;
+            border: 3px solid #000000;
+            border-radius: 25px;
+            padding: 10px;
+            background-color: #00000000;
+            align-self: center;
+            outline: unset;
+            font-size: 1.25cm;
+            font-family: Console;
+            transition: linear 0.25s
+        }
+        .button-invite:hover {
+            background-color: #000000;
+            color: white
+        }
+    </style>
+
+    <div class="center" style="font-family: Console; font-size: 1.75cm; text-align: center;">
+        <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">Bienvenido al Clan
+            Inks iGod</p>
+    </div>
+</head>
+
+<body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div style="font-family: Console; color: #000000; font-size: 1.75cm; text-align: center" draggable="true">
+        <br>
+        <p><b>Elije tu destino</b></p>
+        <br>
+        <a href="discord.html">
+            <button type="button" class="button-invite">Servidor de Discord</button>
+        </a>
+        <br>
+        <br>
+        <a href="about.html">
+            <button type="button" class="button-invite">Acerca de</button>
+        </a>
+        <br>
+        <br>
+        <a href="server-mc.html">
+            <button type="button" class="button-invite">Servidor de Minecraft(Java)</button>
+        </a>
+        <br>
+        <br>
+        <a href="id-info.html">
+            <button type="button" class="button-invite">IDs en juegos</button>
+        </a>
+    </div>
+    <script>
+        function openWindowText(text) {
+            var windoww = window.open(``, `Ventana`, `height=500px,width=500px`)
+            windoww.document.write(`<html><body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+        }
+
+        function openWindowCustom(url, name, config) {
+            var windoww = window.open(`${url}`, `${name}`, `${config}`, true)
+        }
+
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style="font-size: 1cm; font-family: Console; text-align: center">Hemos cambiado de dominio!</p>
+    <br>
+</body>
+
+<footer>
+    <div class="rectangle-footer">
+        <br>
+        <p style="font-size: 1cm; font-family: Console; text-align: center; color: rgb(255, 255, 255);;"
+            draggable="true">Contacto</p>
+        <p style="font-size: 1cm; font-family: Console; color: #ffffff; text-align: center;"><b
+                draggable="true">Discord:</b> Mr. Mario#8498
+            <img src="imgs/Discord pfp xmas.png" style="height: 48px; border-radius: 32px;" draggable="false">
+        </p>
+        <br>
+    </div>
+</footer>
+
+</html>

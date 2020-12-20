@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<title>Clan Inks iGod - IDs de juegos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script>
+    function openWindowText(text) {
+        var windoww = window.open(``, `Ventana`, `height=500px,width=500px`)
+        windoww.document.write(`<html><body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+    }
+
+    function openWindowCustom(url, name, config) {
+        var windoww = window.open(`${url}`, `${name}`, `${config}`, true)
+    }
+</script>
+<!--Aquí todos los styles-->
+<style>
+    .bg {
+        background-image: url("imgs/bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .center {
+            margin: auto;
+            width: 100%;
+            padding: auto;
+            background-color: #000000;
+            min-height: 2.5cm;
+            text-align: center 
+        }
+
+        .rectangle {
+            height: 5px;
+            width: 100%;
+            background: #000000;
+        }
+
+        .rectangle-footer {
+            min-height: 115px;
+            width: 100%;
+            background-color: #000000;
+        }
+        @font-face {
+            font-family: "Console";
+            src: url("custom-fonts/Inconsolata-VariableFont_wdth\,wght.ttf");
+        }
+        @font-face {
+            font-family: "Mojangles";
+            src: url('custom-fonts/minecraft.ttf');
+        }
+</style>
+<!--Aquí los style de menús despegables-->
+<style type="text/css">
+    * {
+        margin: auto;
+        padding: 0px;
+    }
+    #header {
+        margin: 0px;
+        width: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        align-content: center
+    }
+    ul,
+    ol {
+        list-style: none;
+    }
+    .nav>li {
+        float: left;
+    }
+    .nav li a {
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 12px;
+        display: block;
+        transition: linear 0.25s;
+    }
+    .nav li a:hover {
+        background-color: #434343a2;
+    }
+    .nav li ul {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+    }
+    .nav li:hover>ul {
+        display: block;
+    }
+    .nav li ul li {
+        position: relative;
+    }
+    .nav li ul li ul {
+        right: -140px;
+        top: 0px;
+    }
+</style>
+<html class="bg">
+
+<head>
+    <div class="center" style="font-family: Console; font-size: 1.75cm; text-align: center;">
+        <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">IDs de juegos</p>
+    </div>
+</head>
+
+<body>
+    <div id="header" style="min-height: 1.5cm; background-color: black; width: 100%;">
+        <ul class="nav">
+            <li><a draggable="true">Funciones</a>
+                <ul>
+                    <li><a href="">Recargar página</a>
+                    <li><a draggable="true" onclick="openWindowText('Esto no sé para que está la verdad')">Abrir ventana</a>
+                </ul>
+            <li><a href="index.html">Inicio</a>
+            <li><a href="about.html">Acerca de</a>
+            <li><a href="server-mc.html">Servidor de Minecraft</a>
+            <li><a href="discord.html">Discord</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <style>
+        #id-container {
+            min-width: 60%;
+            max-width: 80%;
+            min-height: 60%;
+            background-color: black;
+            border-radius: 16px;
+            border-width: 5px;
+            border-color: white;
+            border-style: solid;
+            text-align: center;
+            font-size: 1.5cm;
+            color: white
+        }
+        #panel-title {
+            font-family: "Console";
+            font-size: 1.75cm;
+        }
+        #panel-id {
+            font-family: "Console";
+            font-size: 1.5cm;
+        }
+
+        #button-namemc {
+            padding: 10px;
+            margin: auto;
+            background-color: #00000000;
+            font-size: 1.25cm;
+            color: white;
+            font-family: "Console";
+            border-radius: 32px;
+            border-width: 3px;
+            border-color: white;
+            outline: unset;
+            transition: linear 0.25s
+        }
+        #button-namemc:hover {
+            background-color: #ffffff;
+            font-size: 1.25cm;
+            color: #000000;
+            font-family: "Console";
+            border-radius: 32px;
+            border-width: 3px;
+            border-color: white;
+            outline: unset;
+            transition: linear 0.25s
+        }
+    </style>
+    <div id=id-container>
+        <p id=panel-title><b draggable="true">Fortnite</b></p>
+        <br>
+        <p id=panel-id><b draggable="true">Líder:</b> TTV.Gatus_igod</p>
+        <p id=panel-id><b draggable="true">Co-líder:</b> TTV.MARIO_iGod</p>
+        <p id=panel-id><b draggable="true">Admins:</b> SolVent270, adriturbito</p>
+        <br>
+    </div>
+    <br>
+    <div id=id-container>
+        <p id=panel-title><b draggable="true">Minecraft</b></p>
+        <p id=panel-id><b draggable="true">Java</b></p>
+        <p id=panel-id><b draggable="true">Co-líder:</b> NotMrMario</p>
+        <br>
+        <a href="https://es.namemc.com">
+            <button id=button-namemc type="button">Buscar cuentas de Minecraft Java (premium)</button>
+        </a>
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+
+<footer>
+    <div class="rectangle-footer">
+        <br>
+        <p style="font-size: 1cm; font-family: Console; text-align: center; color: rgb(255, 255, 255);;" draggable="true">Contacto</p>
+        <p style="font-size: 1cm; font-family: Console; color: #ffffff; text-align: center;"><b draggable="true">Discord:</b> Mr. Mario#8498 
+            <img src="imgs/Discord pfp xmas.png" style="height: 48px; border-radius: 32px;" draggable="false">
+        </p>
+        <br>
+    </div>
+</footer>
+
+</html>
