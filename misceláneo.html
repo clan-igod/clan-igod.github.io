@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-<title>Clan Inks iGod - Inicio</title>
+<title>Clan Inks iGod - Funciones</title>
+<link rel="icon" href="imgs/Clan iGod.png">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <head>
     <link rel="icon" href="imgs/Clan iGod.png">
@@ -56,8 +58,7 @@
         }
 
         .nav>li {
-            float: center;
-            max-width: 20%;
+            float: left;
         }
 
         .nav li a {
@@ -101,14 +102,35 @@
         }
     </style>
     <style>
-        .button-invite {
+        .button-index {
             margin: auto;
-            border: 3px solid #000000;
-            border-radius: 25px;
+            border: solid black;
+            border-radius: 20px;
             padding: 10px;
             background-color: #00000000;
             outline: unset;
             font-size: 1cm;
+            font-family: Console;
+            transition: linear 0.25s;
+            color: white;
+        }
+        .button-index:hover {
+            background-color:white;
+            color: black
+        }
+        .button-index:hover:active {
+            background-color: black;
+            color: white;
+        }
+        
+        .button-invite {
+            margin: auto;
+            border: 4px solid #000000;
+            border-radius: 25px;
+            padding: 10px;
+            background-color: #00000000;
+            outline: unset;
+            font-size: 1.5cm;
             font-family: Console;
             transition: linear 0.25s
         }
@@ -123,70 +145,42 @@
     </style>
 
     <div class="center" style="font-family: Console; font-size: 1.75cm; text-align: center;">
-        <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">Bienvenido al Clan Inks iGod</p>
+        <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">Misceláneo</p>
+        <a href="index.html">
+            <button type="button" class="button-index">Inicio</button>
+        </a>
     </div>
 </head>
 
 <body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-    <div style="font-family: Console; color: #000000; font-size: 1.75cm; text-align: center; align-content: center;" draggable="true">
-            <br>
-            <p><b>Elije tu destino</b></p>
-            <br>
-            <a href="discord.html">
-                <button type="button" class="button-invite">Servidor de Discord</button>
-            </a>
-            <br>
-            <br>
-            <a href="about.html">
-                <button type="button" class="button-invite">Acerca de</button>
-            </a>
-            <br>
-            <br>
-            <a href="server-mc.html">
-                <button type="button" class="button-invite">Servidor de Minecraft(Java)</button>
-            </a>
-            <br>
-            <br>
-            <a href="id-info.html">
-                <button type="button" class="button-invite">IDs en juegos</button>
-            </a>
-            <br>
-            <br>
-            <a href="misceláneo.html">
-                <button type="button" class="button-invite">Misceláneo</button>
-            </a>
+    <div style="font-family: Console; color: #000000; font-size: 1.75cm; text-align: center; align-content: center;;">
+        <br>
+        <p draggable=true>Elije la función que quieras probar</p>
+        <br>
+        <button type="button" class="button-invite" onclick="openWindowText('Hola c:')">Abrir ventana</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <script>
+            function openWindowText(text) {
+                var windoww = window.open(``, `Ventana`, `height=500px,width=500px`)
+                windoww.document.write(`<html><body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
+            }
+        </script>
     </div>
-    <script>
-        function openWindowText(text) {
-            var windoww = window.open(``, `Ventana`, `height=500px,width=500px`)
-            windoww.document.write(`<html><body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"><p style="font-family: Impact; font-size: 1.75cm; text-align:center" draggable="true">${text}</p></body></html>`)
-        }
-
-        function openWindowCustom(url, name, config) {
-            var windoww = window.open(`${url}`, `${name}`, `${config}`, true)
-        }
-
-    </script>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p style="font-size: 1cm; font-family: Console; text-align: center">Hemos cambiado de dominio!</p>
-    <br>
 </body>
 
 <footer>
     <div class="rectangle-footer">
         <br>
-        <p style="font-size: 1cm; font-family: Console; text-align: center; color: rgb(255, 255, 255);;"
-            draggable="true">Contacto</p>
-        <p style="font-size: 1cm; font-family: Console; color: #ffffff; text-align: center;"><b
-                draggable="true">Discord:</b> Mr. Mario#8498
-            <img src="imgs/Discord pfp xmas.png" style="height: 48px; border-radius: 32px;" draggable="false">
+        <p style="font-size: 1cm; font-family: Console; text-align: center; color: rgb(255, 255, 255);" draggable="true">Contacto</p>
+        <p style="font-size: 1cm; font-family: Console; color: #ffffff; text-align: center;"><b draggable="true">Discord:</b> Mr. Mario#8498
+            <img src="imgs/Discord pfp xmas.png" style="height: 48px; border-radius: 32px;" draggable="true">
         </p>
         <br>
     </div>
 </footer>
-
-</html>

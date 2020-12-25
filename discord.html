@@ -3,7 +3,7 @@
 <title>Clan Inks iGod - Discord</title>
 
 <head>
-    <link rel="icon" href="imgs/web-icon.png">
+    <link rel="icon" href="imgs/Clan iGod.png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
         .center {
@@ -57,7 +57,8 @@
         }
 
         .nav>li {
-            float: left;
+            float: center;
+            max-width: 20%;
         }
 
         .nav li a {
@@ -114,17 +115,9 @@
     </div>
 </head>
 <body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-    <div id="header" style="min-height: 1.5cm; background-color: black; width: 100%;">
+    <div id="header" class="center" style="min-height: 1.5cm; background-color: black; width: 100%; align-content: center;">
         <ul class="nav">
-            <li><a draggable="true">Funciones</a>
-                <ul>
-                    <li><a href="">Recargar página</a>
-                    <li><a draggable="true" onclick="openWindowText('Esto no sé para que está la verdad')">Abrir ventana</a>
-                </ul>
-            <li><a href="index.html">Inicio</a>
-            <li><a href="about.html">Acerca de</a>
-            <li><a href="server-mc.html">Servidor de Minecraft</a>
-            <li><a href="id-info.html">IDs de juegos</a>
+            <li><a href="index.html" style="font-size: 1cm; font-family: Console;">Inicio</a>
             </li>
         </ul>
     </div>
@@ -139,6 +132,10 @@
         <br>
         <br>
         <br>
+        <img src="imgs/web-icon.png" style="height: 200px;">
+        <br>
+        <br>
+        <br>
         <br>
         <div>
             <style>
@@ -149,7 +146,12 @@
                 }
                 button:hover {
                     color: rgb(255, 255, 255);
-                    background-color:rgb(0, 0, 0)
+                    background-color:rgb(0, 0, 0);
+                    transition: linear 0.15s;
+                }
+                button:hover:active {
+                    background-color: white;
+                    color: black;
                 }
             </style>
             <a onclick="openWindowCustom('https:/\/discord.com/invite/WTMTQgmXg6', 'Invitación', 'width=500px,height=800,left=450px')">

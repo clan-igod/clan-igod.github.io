@@ -5,7 +5,7 @@
 <title>Clan Inks iGod - Servidor de Minecraft</title>
 
 <head>
-    <link rel="icon" href="imgs/web-icon.png">
+    <link rel="icon" href="imgs/Clan iGod.png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
         .center {
@@ -57,7 +57,8 @@
         }
 
         .nav>li {
-            float: left;
+            float: center;
+            max-width: 20%;
         }
 
         .nav li a {
@@ -120,17 +121,9 @@
     </div>
 </head>
 <body style="background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-    <div id="header" style="min-height: 1.5cm; background-color: black; width: 100%;font-family: Mojangles;">
+    <div id="header" class="center" style="min-height: 1.5cm; background-color: black; width: 100%; align-content: center;">
         <ul class="nav">
-            <li><a draggable="true">Funciones</a>
-                <ul>
-                    <li><a href="">Recargar página</a>
-                    <li><a draggable="true" onclick="openWindowText('Esto no sé para que está la verdad')">Abrir ventana</a>
-                </ul>
-            <li><a href="index.html">Inicio</a>
-            <li><a href="about.html">Acerca de</a>
-            <li><a href="id-info.html">IDs de juegos</a>
-            <li><a href="discord.html">Discord</a>
+            <li><a href="index.html" style="font-size: 1cm; font-family: Mojangles;">Inicio</a>
             </li>
         </ul>
     </div>
@@ -143,7 +136,7 @@
     <br>
     <br>
     <br>
-    <div style="width: 60%; height: 666px; background-color: rgb(49, 49, 49); color: white; font-family: Arial; border-radius: 10px;">
+    <div style="width: 60%; min-height: 590px; background-color: rgb(49, 49, 49); color: white; font-family: Arial; border-radius: 10px;">
         <style>
             .server-info {
                 text-align: center;
@@ -158,17 +151,17 @@
         <br>
         <p class="server-info" style="font-family: Mojangles;"><b class="bold-info" draggable="true" style="font-family: Mojangles;">Ip:</b> notmrmario.aternos.me</p>
         <br>
-        <p class="server-info" style="font-family: Mojangles;"><b class="bold-info" draggable="true" style="font-family: Mojangles;">Versión:</b> 1.16.4 Vanilla</p>
+        <p class="server-info" style="font-family: Mojangles;" id=version></p>
         <br>
         <p class="server-info" style="font-family: Mojangles;"><b class="bold-info" draggable="true" style="font-family: Mojangles;">Tipo:</b> Java</p>
         <br>
-        <p class="bold-info" style="font-family: Mojangles;"><b style="font-family: Mojangles;">Estado:</b></p><p class="server-info" id=stus style="font-family: Mojangles;"></p>
+        <p class="bold-info" style="font-family: Mojangles;" id=stus></p>
         <br>
-        <p class="bold-info" style="font-family: Mojangles;"><b style="font-family: Mojangles;">Número de jugadores:</b></p><p class="server-info" id=nply style="font-family: Mojangles;"></p>
+        <p class="bold-info" style="font-family: Mojangles;" id=nply></p>
         <br>
         <br>
         <br>
-        <div style="text-align: center; min-height: 210px; width: 59%; background-color: black; border-radius: 5px; border-color: white; border-width: 5px; border-style: solid; border-collapse: collapse; min-width: 2cm; position: absolute">
+        <div style="margin: auto; text-align: center; min-height: 210px; width: 59%; background-color: black; border-radius: 5px; border-color: white; border-width: 5px; border-style: solid; border-collapse: collapse; min-width: 2cm; position: absolute">
             <br>
             <img src="imgs/Nueva imagen de Discord.png" style="height: 96px; width: 96px; border-radius: 64px;" draggable="false">
             <br>

@@ -2,7 +2,7 @@
 <title>Clan Inks iGod - Acerca de</title>
 
 <head>
-    <link rel="icon" href="imgs/web-icon.png">
+    <link rel="icon" href="imgs/Clan iGod.png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style>
         .center {
@@ -44,16 +44,21 @@
             margin: 0px;
             width: 500px;
             font-family: Arial, Helvetica, sans-serif;
-            align-content: center
+            align-content: center;
+            align-self: center;
+            align-items: center;
+            float: center
         }
 
         ul,
         ol {
             list-style: none;
+            float: center
         }
 
         .nav>li {
-            float: left;
+            float: center;
+            max-width: 20%;
         }
 
         .nav li a {
@@ -63,29 +68,35 @@
             padding: 10px 12px;
             display: block;
             transition: linear 0.25s;
+            float: center
         }
 
         .nav li a:hover {
             background-color: #434343a2;
+            float: center
         }
 
         .nav li ul {
             display: none;
             position: absolute;
             min-width: 160px;
+            float: center
         }
 
         .nav li:hover>ul {
             display: block;
+            float: center
         }
 
         .nav li ul li {
             position: relative;
+            float: center
         }
 
         .nav li ul li ul {
             right: -140px;
             top: 0px;
+            float: center
         }
     </style>
     <style>
@@ -116,18 +127,10 @@
         <p style="color:rgb(255, 255, 255); position: static; text-align: center" draggable="true">Acerca de este Clan</p>
     </div>
 </head>
-<body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-    <div id="header" style="min-height: 1.5cm; background-color: black; width: 100%; align-content: center;">
+<body style="background-image: url('imgs/bg.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; align-content: center">
+    <div id="header" class="center" style="min-height: 1.5cm; background-color: black; width: 100%; align-content: center;">
         <ul class="nav">
-            <li><a draggable="true">Funciones</a>
-                <ul>
-                    <li><a href="">Recargar página</a>
-                    <li><a draggable="true" onclick="openWindowText('Esto no sé para que está la verdad')">Abrir ventana</a>
-                </ul>
-            <li><a href="index.html">Inicio</a>
-            <li><a href="server-mc.html">Servidor de Minecraft</a>
-            <li><a href="id-info.html">IDs de juegos</a>
-            <li><a href="discord.html">Discord</a>
+            <li><a href="index.html" style="font-size: 1cm; font-family: Console;">Inicio</a>
             </li>
         </ul>
     </div>
